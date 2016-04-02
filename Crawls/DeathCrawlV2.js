@@ -200,7 +200,7 @@ function DeathCrawl() {
         words += 1600;
     }
 
-    alert("Something’s moving. Write 3% of your word count for this crawl, " + (words *.03) + ".");
+    alert("Something’s moving. Write 3% of your word count for this crawl, " + Math.round(words * 0.03) + ".");
     if (death == "STUPID") {
         alert("The thing turns out to be a bunny. Write for 10 minutes as you pet it.");
         var temp = prompt("How many words did you get?");
