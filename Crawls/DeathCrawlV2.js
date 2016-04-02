@@ -372,8 +372,8 @@ function DeathCrawl() {
     	advance = false;
     }
 
-    while ()advance
-    	{!
+    while (!advance)
+    	{
     		var choice = prompt("The objects are a VIAL colored green, a DAGGER, and a SCROLL.").toUpperCase();
     		exit(choice);
 
