@@ -3,13 +3,13 @@ var words = 0;          //keeps track of words a user is supposed to have writte
 var weapon, choice;
 
 //call after each and every prompt, to see if the user wants to get out.
-function exit(text) {
+/*function exit(text) {
     if (text == "ESCAPE" || text == "EXIT" || text == "STOP") {
         throw new Error("Program killed mid-run");
     }
-}
+}*/
 
-function DeathCrawl() {
+function DeathCrawlV2() {
     alert("Welcome to the death crawl, JS version. Type escape at any prompt to exit, and have fun.");
 
     /*
