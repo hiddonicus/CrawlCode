@@ -1,5 +1,6 @@
 var advance = false;    //used for running while loops, so that the sequence repeats if the user doesn't enter a valid input.
 var words = 0;          //keeps track of words a user is supposed to have written, and/or claims to have written.
+var weapon, choice;
 
 //call after each and every prompt, to see if the user wants to get out.
 function exit(text) {
@@ -23,7 +24,7 @@ function DeathCrawl() {
     alert("There, a man sells weaponry. You’ve bought from him before, so you know that his weapons are good. He smiles as you approach. “What would you like?” He points to his assorted wares. There’s a BOW, a SWORD, and a FISHING POLE.");
     while(!advance) {
         var alive = true;
-        var weapon = prompt("Which weapon would you like to take?").toUpperCase(); //Always call toUpperCase() so that we can ignore case in general.
+        weapon = prompt("Which weapon would you like to take?").toUpperCase(); //Always call toUpperCase() so that we can ignore case in general.
         exit(weapon);
 
         //If the user picked the bow, run this loop.
@@ -201,6 +202,7 @@ function DeathCrawl() {
     }
 
     alert("Something’s moving. Write 3% of your word count for this crawl, " + Math.round(words * 0.03) + ".");
+    wrods += Math.round(words * 0.03);
     if (death == "STUPID") {
         alert("The thing turns out to be a bunny. Write for 10 minutes as you pet it.");
         var temp = prompt("How many words did you get?");
@@ -371,10 +373,11 @@ function DeathCrawl() {
         }
         advance = false;
     }
+    advance = false;
 
     while (!advance)
         {
-            var choice = prompt("The objects are a VIAL colored green, a DAGGER, and a SCROLL.").toUpperCase();
+            choice = prompt("The objects are a VIAL colored green, a DAGGER, and a SCROLL.").toUpperCase();
             exit(choice);
 
             if (choice == "VIAL") {
