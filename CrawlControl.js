@@ -9,17 +9,20 @@ var baseURL = "https://hiddenstorys.github.io/CrawlCode/"
 
 var crawls = { //A dictionary of crawls and details about them. Todo: Put in details about them. 
   "Pokemon Crawl": {
-    "Author": "HiddenStorys",
+    "Author": "gaegirl",
+    "Converter": "HiddenStorys",
     "Description": "Today's the day! It's time to start on your journey as a pokemon trainer. Pick a starter, and battle your way through the region.",
     "Theme": "Pokemon Trainer"
   },
   "Death Crawl V1": {
     "Author": "HiddenStorys",
+    "Converter": "HiddenStorys",
     "Description": "",
     "Theme": "Trip through the Underworld"
   },
   "Death Crawl V2": {
-    "Author": "CraftSpider",
+    "Author": "HiddenStorys",
+    "Converter": "CraftSpider",
     "Description": "",
     "Theme": "Trip through the Underworld",
     "WordMin": 11452,
@@ -56,7 +59,7 @@ var generators = {
 var scriptList = [
   baseURL + 'Crawls/DeathCrawlV2.js',
   baseURL + 'Crawls/DeathCrawlV1.js',
-  baseURL + 'Crawls/Pokemon%20Word%20Crawl.js',
+  baseURL + 'Crawls/PokemonCrawl.js',
   baseURL + 'Challenges/Racebot.js',
   baseURL + 'Challenges/WordWarBot.js'
 ];
@@ -307,7 +310,7 @@ function exit(text) { //Allows user to escape the loop at any time by writing ei
   }
 }
 
-//TODO: Add locsa storage lo that users can 'log in' and then allow them to track their complete word count. This should be possible with HTML5 Local Storage... I hope. 
+//TODO: Add local storage lo that users can 'log in' and then allow them to track their complete word count. This should be possible with HTML5 Local Storage... I hope. 
 
 /* Note Section 
 ------------------------------------------------------
@@ -329,4 +332,3 @@ console.log(two)
   -Look for more chalhlnges on the Nanowrimo forumsleec
     -
 */
-
